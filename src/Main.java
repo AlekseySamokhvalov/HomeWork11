@@ -9,8 +9,23 @@ public class Main {
         }
     }
 
+    public static void installApp(int osType, int deviceYear) {
+        int currentYear = 2015;
+
+        if (deviceYear >= currentYear) {
+            System.out.println("Установите приложение для " + (osType == 0 ? "iOS" : "Android") + " по ссылке");
+        } else {
+            System.out.println("Установите облегченную версию приложения для " + (osType == 0 ? "iOS" : "Android") + " по ссылке");
+        }
+    }
+
+
     public static void main(String[] args) {
         int year = 2023;
         checkLeapYear(year);
+
+        int osType = 1; // 0 — iOS, 1 — Android
+        int deviceYear = 2017;
+        installApp(osType, deviceYear);
     }
 }
