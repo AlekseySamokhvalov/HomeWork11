@@ -21,9 +21,11 @@ public class Main {
 
 
     public static void main(String[] args) {
+        System.out.println("Решение задачи 1");
         int year = 2023;
         checkLeapYear(year);
 
+        System.out.println("Решение задачи 2");
         int osType = 1; // 0 — iOS, 1 — Android
         int deviceYear = 2017;
         installApp(osType, deviceYear);
